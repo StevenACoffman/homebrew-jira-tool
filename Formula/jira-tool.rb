@@ -5,25 +5,25 @@
 class JiraTool < Formula
   desc "jt - jira-tool is a CLI tool for viewing and manipulating JIRA issues."
   homepage "https://github.com/StevenACoffman/jira-tool"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StevenACoffman/jira-tool/releases/download/v0.0.3/jira-tool_0.0.3_Darwin_x86_64.tar.gz"
-      sha256 "32ba972c5e98eff2892738b235bcfd60f8c546086697530bc99e6bc479d85f73"
+      url "https://github.com/StevenACoffman/jira-tool/releases/download/v0.0.4/jira-tool_0.0.4_Darwin_x86_64.tar.gz"
+      sha256 "2fe8a61c319a671eb234a7bc8e7aea4a1e3504e2456d4e0b332c59c6e7ce247c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/StevenACoffman/jira-tool/releases/download/v0.0.3/jira-tool_0.0.3_Linux_x86_64.tar.gz"
-      sha256 "ad8e1f7c52fed4611e4388872504690ddb3e71e5b59f688353707196640dff9c"
+      url "https://github.com/StevenACoffman/jira-tool/releases/download/v0.0.4/jira-tool_0.0.4_Linux_x86_64.tar.gz"
+      sha256 "9d6269a3d0bb234cf97f79568ffaf1a713f41fb6515e78586087a9bb037c3445"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StevenACoffman/jira-tool/releases/download/v0.0.3/jira-tool_0.0.3_Linux_arm64.tar.gz"
-      sha256 "f531ae110046505bdd54852c45474f82ec903d33b8c0ab8c970662851663a758"
+      url "https://github.com/StevenACoffman/jira-tool/releases/download/v0.0.4/jira-tool_0.0.4_Linux_arm64.tar.gz"
+      sha256 "cb17c1003a55511f3182551f62daf78bf0c19dca48752498d27a10d28e6ff694"
     end
   end
 
