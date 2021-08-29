@@ -5,25 +5,25 @@
 class Jt < Formula
   desc "jt is a CLI tool for viewing and manipulating JIRA issues."
   homepage "https://github.com/StevenACoffman/jt"
-  version "0.0.8"
+  version "0.0.9"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StevenACoffman/jt/releases/download/v0.0.8/jt_0.0.8_Darwin_x86_64.tar.gz"
-      sha256 "ecfc1ba52336794826c3ae25a81cba8d3f8130aae7f5f8ff0ee9f4d2af7b9e64"
+      url "https://github.com/StevenACoffman/jt/releases/download/v0.0.9/jt_0.0.9_Darwin_x86_64.tar.gz"
+      sha256 "fb28926e149bba8a003491b36645574221edf4b626aa75dd5ad0cce9f405b1e9"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/StevenACoffman/jt/releases/download/v0.0.8/jt_0.0.8_Linux_x86_64.tar.gz"
-      sha256 "378d02a6bffb6147bf187a2f6e20b8d27021b19fd9bcb5df2892f0cff9670478"
+      url "https://github.com/StevenACoffman/jt/releases/download/v0.0.9/jt_0.0.9_Linux_x86_64.tar.gz"
+      sha256 "9dbf10e4731c533e631239190d6d0918757ca08036d09f0e5ac2ca4d07a0e3c4"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StevenACoffman/jt/releases/download/v0.0.8/jt_0.0.8_Linux_arm64.tar.gz"
-      sha256 "671a7717272b1cc857b70f3efa9510bc7573e22b35591bc683d978366ba1988a"
+      url "https://github.com/StevenACoffman/jt/releases/download/v0.0.9/jt_0.0.9_Linux_arm64.tar.gz"
+      sha256 "b55c9177a303525cf5908fb8031261ffe198c9ed924bb55f0130084789b44579"
     end
   end
 
